@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <title>Tsuzone</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<?php
+    ini_set("display_errors", 1);
+    require_once("../admin/db_access.php");
+    $db = new comment_db();
+    var_dump($_POST);
+    if($db->write_comment($_POST["id"], $_POST["name"], $_POST["message"])){
+        echo("投稿成功");
+    }else{
+        echo("投稿失敗");
+    }
+    
+?>
+</html>
+
