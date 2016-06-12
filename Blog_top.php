@@ -53,7 +53,9 @@ and open the template in the editor.
                     <img src="./image/prof.png" alt="" width="100">   
                     <p>
                         ツゾさん<br>
-                        ドナドナされてます                   
+                        ドナドナされてます<br>
+			<a href="https://github.com/nsfujimoto">github</a>
+			<a href="https://twitter.com/tuji_fujimonki">Twitter</a>
                     </p>
                 </div>
                 <div class="contents">
