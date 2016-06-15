@@ -9,14 +9,14 @@ and open the template in the editor.
         <title>Tsuzone</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="./Blog_config/Blog_css.css">
+        <link type="text/css" rel="stylesheet" href="/Blog/Blog_config/Blog_css.css">
     </head>
     <body>
         
         <!-- Header -->
         
         <header class="global_header">
-            <a href="./Blog_top.php" class="logo">TSUZONE</a>
+            <a href="/Blog/Blog_top.php" class="logo">TSUZONE</a>
             <p>ぼくのしゅみぶろぐ.</p>
         </header>
         
@@ -50,7 +50,7 @@ and open the template in the editor.
             <div class="right_column">
                 <div class="contents">                 
                     <h1 class="right_header">プロフィール</h1>
-                    <img src="./image/prof.png" alt="" width="100">   
+                    <img src="/Blog/image/prof.png" alt="" width="100">   
                     <p>
                         ツゾさん<br>
                         ドナドナされてます<br>

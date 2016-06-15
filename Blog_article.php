@@ -16,20 +16,14 @@ $id = $sep_url[count($sep_url)-1];
         <title>Tsuzone</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<?php
-        if(isset($id)){
-		echo ( '<link type="text/css" rel="stylesheet" href="../Blog_config/Blog_css.css"> ');
-	}else{
-		echo ( '<link type="text/css" rel="stylesheet" href="./Blog_config/Blog_css.css"> ');
-	}
-?>
+        <link type="text/css" rel="stylesheet" href="/Blog/Blog_config/Blog_css.css">
     </head>
     <body>
         
         <!-- Header -->
         
         <header class="global_header">
-            <a href="../Blog_top.php" class="logo">TSUZONE</a>
+            <a href="/Blog/Blog_top.php" class="logo">TSUZONE</a>
             <p>ぼくのしゅみぶろぐ.</p>
         </header>
         
@@ -87,7 +81,7 @@ $id = $sep_url[count($sep_url)-1];
                     
                     <!-- 投稿フォーム -->
                     
-                    <form class="comment_form" method="post" action="../Blog_config/post_comment.php">
+                    <form class="comment_form" method="post" action="/Blog/Blog_config/post_comment.php">
                         <h2>name:</h2>
                         <input type="text" name="name"><br>
                         <h2>comment:</h2>
@@ -108,7 +102,7 @@ $id = $sep_url[count($sep_url)-1];
             <div class="right_column">
                 <div class="contents">                 
                     <h1 class="right_header">プロフィール</h1>
-                    <img src="../image/prof.png" alt="" width="100">   
+                    <img src="/Blog/image/prof.png" alt="" width="100">   
                     <p>
                         ツゾさん<br>
                         ドナドナされてます<br>
@@ -131,7 +125,7 @@ $id = $sep_url[count($sep_url)-1];
         <!-- Footer -->
         
         <footer class="global_footer">
-            <p class="copyright"><small>Coprighting &copy; 2016 @tuzozozo All Rights Reserved.</small></p>
+            <p class="copyright"><small>Coprighting &copy; 2016 @tsuzozozo All Rights Reserved.</small></p>
         </footer>
                    
         <!-- Footer -->
