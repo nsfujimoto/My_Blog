@@ -16,7 +16,10 @@ $id = $sep_url[count($sep_url)-1];
         <title>Tsuzone</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="/Blog/Blog_config/Blog_css.css">
+        <script src="/~takumi/code-prettify/loader/prettify.js"></script>
+	<script src="/~takumi/code-prettify/loader/lang-css.js"></script>
+	<link rel="stylesheet" href="/~takumi/code-prettify/styles/sons-of-obsidian.css" type="text/css">
+	<link type="text/css" rel="stylesheet" href="/Blog/Blog_config/Blog_css.css">
     </head>
     <body>
         
@@ -129,6 +132,6 @@ $id = $sep_url[count($sep_url)-1];
         </footer>
                    
         <!-- Footer -->
-        
+        <script>prettyPrint();</script>
     </body>
 </html>

@@ -126,6 +126,17 @@ and open the template in the editor.
     margin: 5px;
 }
 
+.thumbnail ::before{
+    width: 0;
+    display: inline-block;
+    content: none;
+}
+.thumbnail ::after{
+    width: 0;
+    display: inline-block;
+    content: none;
+}
+
 .article_title a{ text-decoration: none;}
 .article_title a:link{color: #3c3c3c;}
 .article_title a:visited{color: #3c3c3c;}
