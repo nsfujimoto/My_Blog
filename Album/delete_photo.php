@@ -37,35 +37,21 @@
                 ini_set("display_errors", 1);
                 require_once "../admin/Album_db.php";
                 $db = new album_db();
-                $stmh = $db->get_photos($id);
-                $cnt = 0;
-                foreach($stmh as $value){
-                ?>
-                <div class="album_box">
-                <?php
-                    echo "<div class=\"album_photo_box\">";
-                    echo "<img src=\"" . $value["url"] . '" alt="">'."\n";
-                    echo "</div>";
-                    echo "<hr>";
-                    echo "<p>";
-                    echo "name: " . $value["name"] . "<br>\n";
-                    echo "<small>". $value["date"];
-                    echo "<a href=\"/Blog/Album/delete_photo.php/" . $value["id"] . "\">削除</a>";
-                    echo "</small>";
-                    echo "</p>";
 
+                $stmh = $db->get_photo_from_id($id);
+                $cnt = 0;
+                while($value = $stmh->fetch(PDO::FETCH_ASSOC)){
+                    if(unlink($_SERVER["DOCUMENT_ROOT"] . $value["url"])){
+                        $db->delete_photo_from_id($id);
+                        echo "削除しました";
+                    }else{
+                        echo "削除に失敗しました";
+                    }
                     $cnt ++;
-                ?>
-                </div>
-                <?php
                 }
-                $cnt = $db->count_photos();
-                echo "<br>";
-                echo "<p class=\"center_p\">";
-                for($i = 0 ; $i < $cnt/20 ; $i++){
-                    echo "<a href=\"/Blog/Album/show_photos.php/" . $i ."\">" . $i . "</a>  ";
+                if($cnt == 0){
+                    echo "<p>削除に失敗しました</p>";
                 }
-                echo "</p>";
             ?>
 
 

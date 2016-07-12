@@ -1,0 +1,53 @@
+.album_wrapper{
+    display:table;
+    position:relative;
+    width: 930px;
+    height: auto;
+    margin: 0 auto;
+    overflow: auto;
+    border-spacing: 5px;
+    min-height: 700px;
+}
+
+.album_box{
+    display:inline-block;
+    width: 220px;
+    height: 280px;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    margin: 3px 3px;
+}
+
+.album_box hr{
+    width: 90%;
+    margin: 5px;
+}
+
+.album_box p{
+    margin: 5px;
+    font-family: "メイリオ";
+    text-align:center;
+}
+
+.album_photo_box{
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px 5px;
+    position: relative;
+}
+
+.album_photo_box img{
+    position: absolute;
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.center_p{
+    text-align:center;
+}
