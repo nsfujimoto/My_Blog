@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script type="text/javascript" src="test.js"></script>
+<script src="../marked/lib/marked.js"></script>
+
+<title>JavaScript テスト</title>
+
+
+</head>
+<body oncontextmenu="return false;" onload="init()">
+<style id="sty"></style>
+<form name="form1">
+    <input type="text" name="name">
+    <input type="text">
+    <input type="submit" value="送信" onclick="asyncSend()">
+</form>
+<div id="result"></div>
+
+<table>
+    <tr>
+        <td><textarea rows="20" cols="80" id="markdown_edit" oninput="convert()" class="input_field"></textarea></td>
+        <td><textarea rows="20" cols="30" id="style_edit" oninput="change_style()" class="input_field"></textarea></td>
+    </tr>
+    <tr>
+        <td valign="top" style="border: groove 1px;" colspan="2"><div id="html_view" style="padding:5px;">入力</div></td>
+    </tr>
+</table>
+<input type="button" value="変換" onclick="convert()">
+
+
+</body>
+</html>
