@@ -12,3 +12,5 @@ https://github.com/nsfujimoto/home_page
 
 表示される画面
 ![top](_picture/top.png)
+
+github上で更新できると聞いて
